@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart Baby Safety System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <img src="1.jpeg" alt="Cute Baby" class="baby-image" />
+        <h1>Smart Baby Safety System</h1>
+        <div class="sensor-data">
+            <div class="sensor">
+                <h2>Temperature</h2>
+                <p id="temperature">-- °C</p>
+            </div>
+            <div class="sensor">
+                <h2>Humidity</h2>
+                <p id="humidity">-- %</p>
+            </div>
+            <div class="sensor">
+                <h2>Crying Detection</h2>
+                <p id="crying">No</p>
+            </div>
+            <div class="sensor">
+                <h2>Movement Detection</h2>
+                <p id="movement">No</p>
+            </div>
+        </div>
+        <div id="alert" class="alert hidden"></div>
+        <div class="controls">
+            <button id="startBtn" class="btn">Start</button>
+            <button id="stopBtn" class="btn">Stop</button>
+        </div>
+        <audio id="buzzerSound" src="b.mp3" preload="auto"></audio>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
